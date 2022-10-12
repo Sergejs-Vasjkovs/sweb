@@ -1,0 +1,36 @@
+.button {
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.green {
+  color: white;
+  background-color: var(--brand-green);
+}
+
+.white {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.wide {
+  padding: 15px 90px;
+}
+
+.narrow {
+  padding: 15px 30px;
+}
+
+
+.button:active {
+    filter: brightness(80%);
+}
+
+button:disabled,
+button[disabled]{
+  background-color: #cccccc;
+  color: #666666;
+}
