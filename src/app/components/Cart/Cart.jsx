@@ -8,25 +8,6 @@ import findCurrentCurrency from "../../utils/findCurrentCurrency";
 import calculatePercentage from "../../utils/calculatePercentage";
 
 class Cart extends Component {
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {
-    //         cartProductList: this.props.cartProductList
-    //     };
-    // }
-
-    // componentDidUpdate(prevProps, prevState) {
-    //     if (JSON.stringify(prevProps.cartProductList) !== JSON.stringify(this.props.cartProductList)) {
-    //         console.log("need to update cartProductList");
-    //         this.handleForceupdateMethod();
-    //     }
-    // }
-
-    // handleForceupdateMethod = () => {
-    //     console.log("forceUpdate");
-    //     this.forceUpdate();
-    // };
-
     render() {
         const tax = 21;
         const { cartProductList, totalPrice, currentCurrency, totalQuantity } = this.props;
