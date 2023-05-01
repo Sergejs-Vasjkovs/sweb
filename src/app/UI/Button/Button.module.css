@@ -1,0 +1,70 @@
+/* Main styles */
+.large,
+.medium,
+.white {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+/* Large button */
+.large {
+    font-size: 16px;
+    border: none;
+    color: white;
+    background-color: var(--brand-green);
+    padding: 15px 90px;
+    margin: 20px 0 40px 0;
+}
+
+/* mediu button */
+.medium {
+    font-size: 14px;
+    padding: 15px 35px;
+    color: white;
+    border: 1px solid var(--brand-green);
+    background-color: var(--brand-green);
+}
+
+/* White buttn */
+.white {
+    font-size: 14px;
+    padding: 15px 35px;
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+}
+
+/* for all */
+
+.large:hover,
+.medium:hover {
+    filter: saturate(60%);
+}
+
+.white:hover {
+    background-color: lightgray;
+    border: 1px solid lightgray;
+}
+
+.large:active,
+.medium:active {
+    filter: saturate(120%);
+}
+
+.white:active {
+    background-color: gray;
+}
+
+.large:disabled,
+.medium:disabled,
+.white:disabled
+button[disabled]{
+  border: 1px solid gray;
+  background-color: lightgray;
+  color: gray;
+}

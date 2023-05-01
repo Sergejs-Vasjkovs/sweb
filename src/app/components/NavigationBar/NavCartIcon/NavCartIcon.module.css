@@ -1,0 +1,54 @@
+.cart {
+    margin: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.number {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: -10px;
+    right: -10px;
+
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+}
+
+.bump {
+    animation: bump 300ms ease-out;
+  }
+
+@keyframes bump {
+    0% {
+      transform: scale(1);
+    }
+    10% {
+      transform: scale(0.8);
+    }
+    30% {
+      transform: scale(1.25);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

@@ -1,0 +1,31 @@
+.items {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.light {
+    font-weight: 500;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.container {
+    max-height: 50vh;
+    width: 100%;
+    overflow: auto;
+    scrollbar-width: thin;
+  }
+
+.container::-webkit-scrollbar {
+    width: 6px;
+}
+.container::-webkit-scrollbar-thumb{
+    background: lightgray;
+}

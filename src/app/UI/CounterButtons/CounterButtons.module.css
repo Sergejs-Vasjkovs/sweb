@@ -1,0 +1,62 @@
+.counter {
+    width: 45px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.arrow {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow:hover {
+    background-color: lightgray;
+}
+
+.arrow:active {
+    background-color: gray;
+}
+
+.arrow:before, .arrow:after {
+    position: absolute;
+    content: ' ';
+    left: 22px;
+    height: 20px;
+    width: 1px;
+    background-color: #333;
+  }
+
+  .pluss:before {
+    transform: rotate(90deg);
+  }
+
+  .pluss:after {
+    transform: rotate(0deg);
+  }
+
+  .minuss:before {
+    transform: rotate(90deg);
+  }
+
+  .minuss:after {
+    transform: rotate(90deg);
+  }
+
+  .number {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 160%;
+
+  }

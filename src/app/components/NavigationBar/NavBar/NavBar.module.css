@@ -1,0 +1,121 @@
+.header {
+    font-family: 'Raleway';
+    font-style: normal;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+}
+
+.buttons {
+    height: 100%;
+    display: flex;
+}
+
+.wrapper {
+  position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.burger:hover {
+    opacity: 0.5;
+  }
+
+
+.burger span {
+    position: absolute;
+    background-color: black;
+    top: 9px;
+    width: 20px;
+    height: 2px;
+}
+
+.burger::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    top: 0;
+    width: 20px;
+    height: 2px;
+}
+
+.burger::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    bottom: 0;
+    width: 20px;
+    height: 2px;
+}
+
+.close {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .close:hover {
+    opacity: 0.5;
+  }
+
+  .close:before, .close:after {
+    position: absolute;
+    left: 10px;
+    content: ' ';
+    height: 20px;
+    width: 2px;
+    background-color: black;
+  }
+
+  .close:before {
+    transform: rotate(45deg);
+  }
+
+  .close:after {
+    transform: rotate(-45deg);
+  }
+
+  .none {
+    display: flex;
+  }
+
+@media only screen and (max-width: 1024px) {
+    .header {
+        padding: 0 10px;
+    }
+  }
+
+@media only screen and (max-width: 768px) {
+    .none {
+        display: none;
+      }
+
+    .buttons {
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 80px;
+        flex-direction: column;
+    }
+
+    .wrapper {
+        display: flex;
+    }
+  }

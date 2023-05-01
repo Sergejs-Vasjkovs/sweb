@@ -1,0 +1,36 @@
+.navigation {
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 120%;
+    
+    width: auto;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+
+    padding: 15px;
+    cursor: pointer;
+}
+
+.navigation:hover {
+    background-color: #fcfcfc;
+}
+
+.active {
+    font-weight: 600;
+    color: var(--brand-green);
+    border-bottom: 2px solid var(--brand-green);
+}
+
+@media only screen and (max-width: 768px) {
+    .navigation {
+        width: 100%;
+        background-color: white;
+        height: 20px;
+        padding: 15px 0;
+    }
+    .navigation span{
+        padding-left: 10px;
+    }
+}

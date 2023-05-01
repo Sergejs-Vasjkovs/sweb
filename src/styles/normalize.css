@@ -381,7 +381,14 @@ template {
 
 
 /* My own settings */
+body {
+  overflow-y: scroll; /* Show vertical scrollbar */
+}
+
 html {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
   box-sizing: border-box;
 }
 
@@ -389,3 +396,8 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+ol, ul {  
+  list-style-type: none;  
+}  
+
