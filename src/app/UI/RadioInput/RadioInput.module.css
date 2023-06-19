@@ -36,8 +36,7 @@
     position: relative;
     min-width: 30px;
     min-height: 30px;
-    background-color: red;
-    border: 1px solid white;
+    border: 1px solid lightgray;
 }
 
 .container > input:checked + .title {

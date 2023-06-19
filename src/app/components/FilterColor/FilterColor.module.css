@@ -1,6 +1,12 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+}
+
 .container {
     position: relative;
-    margin-right: 5px;
 }
 
 .container input {
@@ -13,33 +19,11 @@
     opacity: 0;
 }
 
-.title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    border: 1px solid black;
-}
-
-.title label {
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    margin: 5px;
-}
-
 .color {
     position: relative;
-    min-width: 24px;
-    min-height: 24px;
+    min-width: 30px;
+    min-height: 30px;
     border: 1px solid lightgray;
-}
-
-.container > input:checked + .title {
-    background-color: var(--brand-black);
-    color: white;
 }
 
 .container > input:checked + .color {

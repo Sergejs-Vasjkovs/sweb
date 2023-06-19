@@ -1,0 +1,48 @@
+.wrapper {
+    margin-right: 20px;
+    max-width: 200px;
+    width: 100%;
+}
+
+.container {
+    height: 35px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    background-color: lightgray;
+}
+
+.header {
+    font-weight: 800;
+}
+
+.count {
+    color:gray
+}
+
+.checkbox {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.checkbox > label {
+    margin-left: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        max-width: 100%;
+    }
+
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .checkbox {
+        width: 220px;
+    }
+}

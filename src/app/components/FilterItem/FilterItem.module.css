@@ -1,0 +1,76 @@
+.filter {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    height: 2.6em;
+    cursor: pointer;
+}
+
+.reset {
+  display: flex;
+  justify-content: center;
+}
+
+.reset > span {
+  color: gray;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 12px;
+}
+
+/* animation */
+.expandable {
+    height: 0;
+    overflow: hidden;
+    background-color: red;
+    color: white;
+    transition: 200ms height ease-in-out;
+}
+
+.open {
+   margin-bottom: 10px;
+}
+
+/* Close */
+.close {
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  width: 14px;
+  height: 14px;
+  opacity: 0.3;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 15px;
+  width: 1px;
+  background-color: gray;
+}
+
+.close:after {
+  transform: rotate(90deg);
+}
+
+.cross:before {
+    transform: rotate(90deg);
+}
+
+@media only screen and (max-width: 768px) {
+  .filter {
+      width: 220px;
+  }
+}

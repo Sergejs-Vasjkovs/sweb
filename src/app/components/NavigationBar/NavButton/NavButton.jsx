@@ -8,6 +8,9 @@ import { withRouter } from "react-router";
 class NavButton extends Component {
     onClickHandle = (category) => {
         this.props.setCurrentValue(category);
+        // if (this.props.location.pathname !== category.name) {
+        //     this.props.history.push(`${category.name}`);
+        // }
         if (this.props.location.pathname !== "/") {
             this.props.history.push("/");
         }

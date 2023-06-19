@@ -1,0 +1,13 @@
+.container {
+    font-family: "Roboto Condensed";
+    font-size: 14px;
+    font-weight: 500;
+
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+
+.select {
+    border: 1px solid lightgray;
+}

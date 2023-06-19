@@ -3,11 +3,15 @@ import { createSlice } from "@reduxjs/toolkit";
 export const postsSlice = createSlice({
     name: "products",
     initialState: {
-        data: []
+        data: [],
+        value: 0
     },
     reducers: {
         fetchProductsSuccess: (state, action) => {
-            state.data = action.payload.category;
+            if (state.value === 0) {
+                state.data = action.payload.category;
+            }
+            state.value++;
         }
     }
 });
